@@ -2,15 +2,7 @@ FROM wnameless/oracle-xe-11g
 
 LABEL description="Install Java"
 
-ARG http_proxy=http://paascloud:8e)P4m)I5y(F9@usproxy.es.oneadp.com:8080
-ARG https_proxy=http://paascloud:8e)P4m)I5y(F9@usproxy.es.oneadp.com:8080
-ARG no_proxy=localhost,.es.ad.adp.com,.oneadp.com,.adp.com,.workscape.net
-
 ARG JAVA_DOWNLOAD_URI=http://download.oracle.com/otn-pub/java/jdk/
-
-ENV http_proxy=${http_proxy}
-ENV https_proxy=${https_proxy}
-ENV no_proxy=${no_proxy}
 
 ENV DEBIAN_FRONTEND noninteractive
 
