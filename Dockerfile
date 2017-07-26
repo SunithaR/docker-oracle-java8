@@ -17,7 +17,8 @@ RUN cd  \
     -O jdk-${VERSION}-linux-x64.tar.gz \
     && tar -xzvf jdk-${VERSION}-linux-x64.tar.gz -C /tmp \
     && mkdir -p /usr/lib/jvm \
-    && mv /tmp/jdk1.${VERSION}.0_${UPDATE} "${JAVA_HOME}"  
+    && mv /tmp/jdk1.${VERSION}.0_${UPDATE} "${JAVA_HOME}"  \
+    && rm -v jdk-${VERSION}-linux-x64.tar.gz    
 
 ENV PATH ${PATH}:/usr/lib/jvm/java-${VERSION}-oracle/bin
 
