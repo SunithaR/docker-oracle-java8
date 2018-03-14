@@ -12,8 +12,8 @@ ENV BUILD 11
 ENV JAVA_HOME /usr/lib/jvm/java-${VERSION}-oracle
 
 RUN cd  \
-    && wget --no-cookies --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie" \
-    ${JAVA_DOWNLOAD_URI}${VERSION}u${UPDATE}-b${BUILD}/d54c1d3a095b4ff2b6607d096fa80163/jdk-${VERSION}u${UPDATE}-linux-x64.tar.gz \
+ 	&& wget --no-cookies --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie" \
+    ${JAVA_DOWNLOAD_URI}${VERSION}u${UPDATE}-b${BUILD}/2f38c3b165be4555a1fa6e98c45e0808/jdk-${VERSION}u${UPDATE}-linux-x64.tar.gz \
     -O jdk-${VERSION}-linux-x64.tar.gz \
     && tar -xzvf jdk-${VERSION}-linux-x64.tar.gz -C /tmp \
     && mkdir -p /usr/lib/jvm \
