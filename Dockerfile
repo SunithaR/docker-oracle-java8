@@ -7,8 +7,8 @@ ARG JAVA_DOWNLOAD_URI=http://download.oracle.com/otn-pub/java/jdk/
 ENV DEBIAN_FRONTEND noninteractive
 
 ENV VERSION 8
-ENV UPDATE 131
-ENV BUILD 11
+ENV UPDATE 161
+ENV BUILD 12
 ENV JAVA_HOME /usr/lib/jvm/java-${VERSION}-oracle
 
 RUN cd  \
